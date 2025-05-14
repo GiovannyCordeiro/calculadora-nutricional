@@ -20,9 +20,9 @@
   - [ ] Desenvolvimento de testes para cada modulo respectivo
 
 - Utilização de 3 artefatos (bibliotecas, APIs e etc)
-  - [] Taskipy
-  - [] Ruff (linter)
-  - [] Pytest (é necesário testar o código)
+  - [ ] Taskipy
+  - [ ] Ruff (linter)
+  - [ ] Pytest (é necesário testar o código)
 
 - O software precisa realizar uma operação com arquivos do usuário (cliente) do software.
 - [ ] O Historico do peso do paciênte deve ser registrado em um documento.
