@@ -33,3 +33,7 @@ Por favor, quando forem desenvolveres suas respectivas funcionalidades, criem um
 chamada `develop-seu-nome` para seguir o modelo do [git flow](https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar).
 
 Faça commits pequenos para cada alteração no projeto e nomeei-os seguindo o [commits semanticos](https://github.com/iuricode/padroes-de-commits)
+
+Sempre que começar o trabalho rode os seguintes comandos:
+1. `git fetch origin`: Para atualizar a referencia da branch main
+2. `git rebase origin/main`: Para atualizar a sua branch de desenvolvimento atual
