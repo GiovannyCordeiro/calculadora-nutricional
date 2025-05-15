@@ -29,7 +29,7 @@
 
 ## Workflow do trabalho
 
-Por favor, quando forem desenvolveres suas respectivas funcionalidades, criem um branch
+Por favor, quando forem desenvolver suas respectivas funcionalidades, criem um branch
 chamada `develop-seu-nome` para seguir o modelo do [git flow](https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar).
 
 Faça commits pequenos para cada alteração no projeto e nomeei-os seguindo o [commits semanticos](https://github.com/iuricode/padroes-de-commits)
