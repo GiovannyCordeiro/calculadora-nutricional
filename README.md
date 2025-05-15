@@ -16,7 +16,7 @@
   - [ ] Menu principal no terminal
   - [ ] Calculo do IMC (indicie de massa corporal)
   - [ ] Calculo do TMB (Taixa de metabolismo basal)
-  - [ ] Calculo do (Gasto energetico total)
+  - [ ] Calculo do GET (Gasto energetico total)
   - [ ] Desenvolvimento de testes para cada modulo respectivo
 
 - Utilização de 3 artefatos (bibliotecas, APIs e etc)
