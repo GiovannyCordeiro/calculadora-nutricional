@@ -1,7 +1,8 @@
+from .tmb_validator import TMBValidator
 
-# peso, altura, idade
 class TMB:
     def __init__(self, weight: int, height: int, age: int):
+        TMBValidator.validate_ints(weight, height, age)
         self.weight = weight
         self.height = height
         self.age = age
