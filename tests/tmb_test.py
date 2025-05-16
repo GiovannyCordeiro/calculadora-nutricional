@@ -33,7 +33,7 @@ def test_tmb_invalid_gender():
     (70, 170, "idade"),
 ])
 def test_tmb_invalid_types(weight, height, age):
-    with pytest.raises((ValueError, TypeError)):
+    with pytest.raises((TypeError)):
         tmb = TMB(weight, height, age)
         tmb.calc("male")
 
