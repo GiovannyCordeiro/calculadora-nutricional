@@ -19,5 +19,9 @@ def calcular_imc(peso, altura):
 
     return imc, classificacao
 
+def salvar_historico_peso(peso):
+    
+    with open("historico_peso.txt", "a") as arquivo:
+        arquivo.write(f"{peso}\n")
 
 
