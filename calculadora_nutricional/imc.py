@@ -26,7 +26,7 @@ def salvar_historico_peso(peso):
 
 def exibir_historico_peso():
     try:
-        with open("historico_pesos.txt", "r") as arquivo:
+        with open("historico_peso.txt", "r") as arquivo:
             print("\nHistórico de Pesos:")
             for linha in arquivo:
                 print(f"- {linha.strip()} kg")
