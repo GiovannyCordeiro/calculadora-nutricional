@@ -24,4 +24,12 @@ def salvar_historico_peso(peso):
     with open("historico_peso.txt", "a") as arquivo:
         arquivo.write(f"{peso}\n")
 
+def exibir_historico_peso():
+    try:
+        with open("historico_pesos.txt", "r") as arquivo:
+            print("\nHistórico de Pesos:")
+            for linha in arquivo:
+                print(f"- {linha.strip()} kg")
+    except FileNotFoundError:
+        print("Você ainda não inseriu nenhum peso.")
 
