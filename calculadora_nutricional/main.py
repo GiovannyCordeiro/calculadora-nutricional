@@ -38,6 +38,9 @@ def menu():
         elif opcao == "3":
             print("Função de cálculo do GET ainda não implementada.")
 
+        elif opcao == "4":
+            exibir_historico_peso()
+
         
 
 
