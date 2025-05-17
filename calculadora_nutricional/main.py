@@ -21,3 +21,16 @@ def menu():
                 salvar_historico_peso(peso)
             except ValueError:
                 print("Entrada inválida. Use números válidos.")
+
+
+        elif opcao == "2":
+            try:
+                peso = int(input("Digite seu peso (kg): "))
+                altura = int(input("Digite sua altura (cm): "))
+                idade = int(input("Digite sua idade (anos): "))
+                genero = input("Digite seu gênero (Ex.: male/female): ")
+                tmb = TMB(peso, altura, idade)
+                resultado = tmb.calc(genero)
+                print(f"Seu TMB é: {resultado} kcal")
+            except Exception as e:
+                print("Erro ao calcular TMB. Verifique se os dados estão corretos.")
