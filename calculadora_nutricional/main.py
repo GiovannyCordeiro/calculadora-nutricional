@@ -1,4 +1,4 @@
-from imc import calcular_imc, salvar_historico, exibir_historico
+from imc import calcular_imc, salvar_historico_peso, exibir_historico
 from tmb import TMB
 
 def menu():
@@ -11,3 +11,13 @@ def menu():
         print("5. Sair")
 
         opcao = input("Escolha o número correspondente a opção que deseja executar: ")
+
+        if opcao == "1":
+            try:
+                peso = float(input("Digite seu peso (kg): "))
+                altura = float(input("Digite sua altura (m): "))
+                imc, classificacao = calcular_imc(peso, altura)
+                print(f"Seu IMC é: {imc:.2f} - {classificacao}")
+                salvar_historico_peso(peso)
+            except ValueError:
+                print("Entrada inválida. Use números válidos.")
