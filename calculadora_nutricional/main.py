@@ -1,4 +1,4 @@
-from imc import calcular_imc, salvar_historico_peso, exibir_historico
+from imc import calcular_imc, salvar_historico_peso, exibir_historico_peso
 from tmb import TMB
 
 def menu():
@@ -37,3 +37,7 @@ def menu():
 
         elif opcao == "3":
             print("Função de cálculo do GET ainda não implementada.")
+
+        
+
+
