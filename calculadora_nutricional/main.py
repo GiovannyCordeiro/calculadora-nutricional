@@ -15,7 +15,7 @@ def menu():
         if opcao == "1":
             try:
                 peso = float(input("Digite seu peso (kg): "))
-                altura = float(input("Digite sua altura (m): "))
+                altura = float(input("Digite sua altura (Ex.: 1.75): "))
                 imc, classificacao = calcular_imc(peso, altura)
                 print(f"Seu IMC é: {imc:.2f} - {classificacao}")
                 salvar_historico_peso(peso)
