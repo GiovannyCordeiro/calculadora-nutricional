@@ -3,7 +3,7 @@ from .tmb import TMB
 
 def menu():
     while True:
-        print("\nCalculadora Nutriconal")
+        print("\nCalculadora Nutricional")
         print("1. Calcular IMC")
         print("2. Calcular TMB")
         print("3. Calcular GET")
