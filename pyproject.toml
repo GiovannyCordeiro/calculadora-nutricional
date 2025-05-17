@@ -8,6 +8,8 @@ packages = [{include = "calculadora_nutricional"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+pytest = "^8.3.5"
+pytest-cov = "^6.1.1"
 
 
 [build-system]

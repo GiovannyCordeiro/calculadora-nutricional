@@ -15,12 +15,12 @@
 - Desenvolvimento de três funcionalidades
   - [ ] Menu principal no terminal
   - [ ] Calculo do IMC (indicie de massa corporal)
-  - [ ] Calculo do TMB (Taixa de metabolismo basal)
+  - [x] Calculo do TMB (Taixa de metabolismo basal) | Feito por Giovanny
   - [ ] Calculo do GET (Gasto energetico total)
-  - [ ] Desenvolvimento de testes para cada modulo respectivo
+  - [ ] Desenvolvimento de testes para cada modulo respectivo | Em progresso!
 
 - Utilização de 3 artefatos (bibliotecas, APIs e etc)
-  - [ ] Taskipy: Ferramenta responsavel por facilitar o processo de rodar comandos!
+  - [x] Taskipy: Ferramenta responsavel por facilitar o processo de rodar comandos! | Feito por Giovanny
   - [ ] Ruff (linter): Linter para manter o padrao no código
   - [ ] Pytest: Biblioteca para realizar testes do código
 
