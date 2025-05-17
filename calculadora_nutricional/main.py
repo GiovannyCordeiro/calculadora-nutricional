@@ -1,5 +1,5 @@
-from imc import calcular_imc, salvar_historico_peso, exibir_historico_peso
-from tmb import TMB
+from .imc import calcular_imc, salvar_historico_peso, exibir_historico_peso
+from .tmb import TMB
 
 def menu():
     while True:
@@ -45,7 +45,7 @@ def menu():
             print("Sessão Encerrda.")
             break
 
-        if __name__ == "__main__":
+if __name__ == "__main__":
             menu()
 
 
