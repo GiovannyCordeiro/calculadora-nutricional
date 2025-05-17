@@ -34,3 +34,6 @@ def menu():
                 print(f"Seu TMB é: {resultado} kcal")
             except Exception as e:
                 print("Erro ao calcular TMB. Verifique se os dados estão corretos.")
+
+        elif opcao == "3":
+            print("Função de cálculo do GET ainda não implementada.")
