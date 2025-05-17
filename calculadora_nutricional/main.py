@@ -45,6 +45,7 @@ def menu():
             print("Sessão Encerrda.")
             break
 
-        
+        if __name__ == "__main__":
+            menu()
 
 
