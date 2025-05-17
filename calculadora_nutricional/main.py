@@ -41,6 +41,10 @@ def menu():
         elif opcao == "4":
             exibir_historico_peso()
 
+        elif opcao == "5":
+            print("Sessão Encerrda.")
+            break
+
         
 
 
