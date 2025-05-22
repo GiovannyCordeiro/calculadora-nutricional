@@ -40,4 +40,5 @@ Sempre que começar o trabalho rode os seguintes comandos:
 
 # Rodar o projeto
 
-Para rodar o projeto execute o comando `python -m calculadora_nutricional.main`
+- Execute o ambiente virtual com `poetry shell`
+- Para rodar o projeto execute o comando `task run`
