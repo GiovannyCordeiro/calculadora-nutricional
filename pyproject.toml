@@ -16,6 +16,17 @@ pytest-cov = "^6.1.1"
 taskipy = "^1.14.1"
 ruff = "^0.11.10"
 
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT', 'FAST']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'double'
+
 [tool.taskipy.tasks]
 run = "python -m calculadora_nutricional.main"
 
