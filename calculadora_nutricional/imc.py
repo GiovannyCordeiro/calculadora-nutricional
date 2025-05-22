@@ -1,9 +1,10 @@
-#Calculo do IMC( Indice de Massa corporal) Formula: peso divido pela altura ao quadrado.
+# Calculo do IMC( Indice de Massa corporal)
+# #Formula: peso divido pela altura ao quadrado.
 def calcular_imc(peso, altura):
-    imc = peso/altura**2
+    imc = peso / altura**2
 
 
-#Classificação da OMS (Organização Mundial de saúde de acordo com o IMC)
+# Classificação da OMS (Organização Mundial de saúde de acordo com o IMC)
     if imc < 18.5:
         classificacao = "Abaixo do peso"
     elif 18.5 <= imc < 25:
@@ -19,10 +20,12 @@ def calcular_imc(peso, altura):
 
     return imc, classificacao
 
+
 def salvar_historico_peso(peso):
 
     with open("historico_peso.txt", "a") as arquivo:
         arquivo.write(f"{peso}\n")
+
 
 def exibir_historico_peso():
     try:
@@ -32,4 +35,3 @@ def exibir_historico_peso():
                 print(f"- {linha.strip()} kg")
     except FileNotFoundError:
         print("Você ainda não inseriu nenhum peso.")
-

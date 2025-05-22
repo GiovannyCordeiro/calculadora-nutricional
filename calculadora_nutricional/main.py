@@ -1,5 +1,6 @@
-from .imc import calcular_imc, salvar_historico_peso, exibir_historico_peso
+from .imc import calcular_imc, exibir_historico_peso, salvar_historico_peso
 from .tmb import TMB
+
 
 def menu():
     while True:
@@ -10,7 +11,8 @@ def menu():
         print("4. Exibir Histórico de Pesos")
         print("5. Sair")
 
-        opcao = input("Escolha o número correspondente a opção que deseja executar: ")
+        opcao = input("Escolha o número correspondente"
+        " a opção que deseja executar: ")
 
         if opcao == "1":
             try:
@@ -22,7 +24,6 @@ def menu():
             except ValueError:
                 print("Entrada inválida. Use números válidos.")
 
-
         elif opcao == "2":
             try:
                 peso = int(input("Digite seu peso (kg): "))
@@ -32,8 +33,9 @@ def menu():
                 tmb = TMB(peso, altura, idade)
                 resultado = tmb.calc(genero)
                 print(f"Seu TMB é: {resultado} kcal")
-            except Exception as e:
-                print("Erro ao calcular TMB. Verifique se os dados estão corretos.")
+            except Exception:
+                print("Erro ao calcular TMB. Verifique "
+                "se os dados estão corretos.")
 
         elif opcao == "3":
             print("Função de cálculo do GET ainda não implementada.")
@@ -48,7 +50,6 @@ def menu():
         else:
             print("Opção inválida. Por favor, escolha um número entre 1 e 5.")
 
+
 if __name__ == "__main__":
-            menu()
-
-
+    menu()
