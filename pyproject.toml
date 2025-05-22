@@ -14,6 +14,7 @@ pytest-cov = "^6.1.1"
 
 [tool.poetry.group.dev.dependencies]
 taskipy = "^1.14.1"
+ruff = "^0.11.10"
 
 [tool.taskipy.tasks]
 run = "python -m calculadora_nutricional.main"
