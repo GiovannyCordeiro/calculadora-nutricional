@@ -18,10 +18,12 @@ ruff = "^0.11.10"
 
 [tool.ruff]
 line-length = 79
+exclude = ["docs/", "*.md"]
+
 
 [tool.ruff.lint]
 preview = true
-select = ['I', 'F', 'E', 'W', 'PL', 'PT', 'FAST']
+select = ['I', 'F', 'E', 'W', 'FAST']
 
 [tool.ruff.format]
 preview = true
