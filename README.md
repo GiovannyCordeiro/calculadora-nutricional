@@ -42,3 +42,7 @@ Sempre que começar o trabalho rode os seguintes comandos:
 
 - Execute o ambiente virtual com `poetry shell`
 - Para rodar o projeto execute o comando `task run`
+
+## Rodando lint
+> Atente-se em estar dentro do ambiente virtual antes de rodar o comando
+- Para rodar a verificacao do linter Ruff execute o comando `task lint`
