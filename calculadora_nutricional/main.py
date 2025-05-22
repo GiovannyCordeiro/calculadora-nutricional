@@ -1,5 +1,6 @@
 from .imc import calcular_imc, salvar_historico_peso, exibir_historico_peso
 from .tmb import TMB
+from .get import GET
 
 def menu():
     while True:
@@ -37,6 +38,22 @@ def menu():
 
         elif opcao == "3":
             print("Função de cálculo do GET ainda não implementada.")
+
+            peso = int(input("Digite seu peso (kg): "))
+            altura = int(input("Digite sua altura (cm): "))
+            idade = int(input("Digite sua idade (anos): "))
+            genero = input("Digite seu gênero (Ex.: male/female): ")
+
+            tmb = TMB(peso, altura, idade)
+            resultado_tmb = tmb.calc(genero)
+
+            inpt_fator_atividade = input("Digite o quanto você se considera ativo\n1 - Sedentario\n2 - Levemente ativo\n3 - Moderadamente ativo\n4 - Muito ativo\n5 - Extremamente ativo)")
+            get = GET(resultado_tmb, int(inpt_fator_atividade))
+
+            resultado_get = get.calc()
+
+            print(f"Seu calculo GET é: {resultado_get}")
+
 
         elif opcao == "4":
             exibir_historico_peso()
