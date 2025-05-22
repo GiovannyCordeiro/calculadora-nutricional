@@ -13,19 +13,19 @@
 - Utilizar [commits semanticos (ou também chamado de Padrões de commits)](https://github.com/iuricode/padroes-de-commits)
 
 - Desenvolvimento de três funcionalidades
-  - [ ] Menu principal no terminal
-  - [ ] Calculo do IMC (indicie de massa corporal)
+  - [x] Menu principal no terminal | Feito por Bianca
+  - [x] Calculo do IMC (indicie de massa corporal) | Feito por Bianca
   - [x] Calculo do TMB (Taixa de metabolismo basal) | Feito por Giovanny
-  - [ ] Calculo do GET (Gasto energetico total)
-  - [ ] Desenvolvimento de testes para cada modulo respectivo | Em progresso!
+  - [ ] Calculo do GET (Gasto energetico total)| A fazer por Viviane
+  - [ ] Desenvolvimento de testes para cada modulo respectivo | Em progresso por todos!
 
 - Utilização de 3 artefatos (bibliotecas, APIs e etc)
-  - [x] Taskipy: Ferramenta responsavel por facilitar o processo de rodar comandos! | Feito por Giovanny
+  - [ ] Taskipy: Ferramenta responsavel por facilitar o processo de rodar comandos! | Feito por Giovanny
   - [ ] Ruff (linter): Linter para manter o padrao no código
-  - [ ] Pytest: Biblioteca para realizar testes do código
+  - [x] Pytest: Biblioteca para realizar testes do código
 
 - O software precisa realizar uma operação com arquivos do usuário (cliente) do software.
-- [ ] O Historico do peso do paciênte deve ser registrado em um documento.
+- [x] O Historico do peso do paciênte deve ser registrado em um documento. | Feito por Bianca
 
 ## Workflow do trabalho
 
@@ -37,3 +37,7 @@ Faça commits pequenos para cada alteração no projeto e nomeei-os seguindo o [
 Sempre que começar o trabalho rode os seguintes comandos:
 1. `git fetch origin`: Para atualizar a referencia da branch main
 2. `git rebase origin/main`: Para atualizar a sua branch de desenvolvimento atual
+
+# Rodar o projeto
+
+Para rodar o projeto execute o comando `python -m calculadora_nutricional.main`

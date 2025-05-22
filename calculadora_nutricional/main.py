@@ -44,7 +44,7 @@ def menu():
         elif opcao == "5":
             print("Sessão Encerrda.")
             break
-        
+
         else:
             print("Opção inválida. Por favor, escolha um número entre 1 e 5.")
 
