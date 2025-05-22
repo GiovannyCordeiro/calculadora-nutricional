@@ -29,6 +29,7 @@ quote-style = 'double'
 
 [tool.taskipy.tasks]
 run = "python -m calculadora_nutricional.main"
+lint = "ruff check . --fix"
 
 [build-system]
 requires = ["poetry-core"]
