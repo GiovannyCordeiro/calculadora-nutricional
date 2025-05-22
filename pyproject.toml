@@ -15,6 +15,9 @@ pytest-cov = "^6.1.1"
 [tool.poetry.group.dev.dependencies]
 taskipy = "^1.14.1"
 
+[tool.taskipy.tasks]
+run = "python -m calculadora_nutricional.main"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
