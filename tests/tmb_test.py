@@ -51,3 +51,20 @@ def test_tmb_edge_cases(weight, height, age):
     tmb = TMB(weight, height, age)
     result = tmb.calc("male")
     assert isinstance(result, (int))
+
+
+# Testando com valores positivos muito baixos e outras combinações de valores altos
+@pytest.mark.parametrize("weight, height, age, gender", [
+    (1, 1, 1, "male"),          
+    (1, 40, 1, "female"),
+    (250, 220, 90, "male"),
+    (200, 170, 100, "female"),
+    (450, 180, 45, "m"),
+    (65, 230, 30, "f"),
+    (70, 170, 125, "male")
+])
+def test_tmb_extreme_and_minimal_positive_inputs(weight, height, age, gender):
+    tmb = TMB(weight, height, age)
+    result = tmb.calc(gender)
+    assert isinstance(result, int)
+    assert result > 0
