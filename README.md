@@ -20,9 +20,9 @@
   - [ ] Desenvolvimento de testes para cada modulo respectivo | Em progresso por todos!
 
 - Utilização de 3 artefatos (bibliotecas, APIs e etc)
-  - [ ] Taskipy: Ferramenta responsavel por facilitar o processo de rodar comandos! | Feito por Giovanny
-  - [ ] Ruff (linter): Linter para manter o padrao no código
-  - [x] Pytest: Biblioteca para realizar testes do código
+  - [x] Taskipy: Ferramenta responsavel por facilitar o processo de rodar comandos! | Feito por Giovanny
+  - [x] Ruff (linter): Linter para manter o padrao no código | Feito por Giovanny
+  - [x] Pytest: Biblioteca para realizar testes do código | Feito por Giovanny
 
 - O software precisa realizar uma operação com arquivos do usuário (cliente) do software.
 - [x] O Historico do peso do paciênte deve ser registrado em um documento. | Feito por Bianca
@@ -40,4 +40,9 @@ Sempre que começar o trabalho rode os seguintes comandos:
 
 # Rodar o projeto
 
-Para rodar o projeto execute o comando `python -m calculadora_nutricional.main`
+- Execute o ambiente virtual com `poetry shell`
+- Para rodar o projeto execute o comando `task run`
+
+## Rodando lint
+> Atente-se em estar dentro do ambiente virtual antes de rodar o comando
+- Para rodar a verificacao do linter Ruff execute o comando `task lint`

@@ -1,5 +1,7 @@
-import pytest # type: ignore
+import pytest  # type: ignore
+
 from calculadora_nutricional.tmb import TMB
+
 
 # ✅ Caminho feliz
 @pytest.mark.parametrize("weight, height, age, gender", [
@@ -20,6 +22,7 @@ def test_tmb_gender_none():
     tmb = TMB(70, 170, 25)
     with pytest.raises(ValueError):
         tmb.calc(None)
+
 
 def test_tmb_invalid_gender():
     tmb = TMB(70, 170, 25)
@@ -46,7 +49,6 @@ def test_tmb_invalid_types(weight, height, age):
     (500, 250, 100),
     (-70, 170, 25),
 ])
-
 def test_tmb_edge_cases(weight, height, age):
     tmb = TMB(weight, height, age)
     result = tmb.calc("male")

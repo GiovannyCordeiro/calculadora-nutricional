@@ -12,6 +12,27 @@ pytest = "^8.3.5"
 pytest-cov = "^6.1.1"
 
 
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.14.1"
+ruff = "^0.11.10"
+
+[tool.ruff]
+line-length = 79
+exclude = ["docs/", "*.md"]
+
+
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'FAST']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'double'
+
+[tool.taskipy.tasks]
+run = "python -m calculadora_nutricional.main"
+lint = "ruff check . --fix"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
