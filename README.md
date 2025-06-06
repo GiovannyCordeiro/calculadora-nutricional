@@ -16,8 +16,8 @@
   - [x] Menu principal no terminal | Feito por Bianca
   - [x] Calculo do IMC (indicie de massa corporal) | Feito por Bianca
   - [x] Calculo do TMB (Taixa de metabolismo basal) | Feito por Giovanny
-  - [ ] Calculo do GET (Gasto energetico total)| A fazer por Viviane
-  - [ ] Desenvolvimento de testes para cada modulo respectivo | Em progresso por todos!
+  - [x] Calculo do GET (Gasto energetico total)| Feito por Viviane
+  - [x] Desenvolvimento de testes para cada modulo respectivo | Feito por todos!
 
 - Utilização de 3 artefatos (bibliotecas, APIs e etc)
   - [x] Taskipy: Ferramenta responsavel por facilitar o processo de rodar comandos! | Feito por Giovanny
