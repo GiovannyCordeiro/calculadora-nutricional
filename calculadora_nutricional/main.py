@@ -36,7 +36,39 @@ def menu():
                 print("Erro ao calcular TMB. Verifique se os dados estão corretos.")
 
         elif opcao == "3":
-            print("Função de cálculo do GET ainda não implementada.")
+            try:
+                peso = int(input("Digite seu peso (kg): "))
+                altura = int(input("Digite sua altura (cm): "))
+                idade = int(input("Digite sua idade (anos): "))
+                genero = input("Digite seu gênero (Ex.: male/female): ")
+                tmb = TMB(peso, altura, idade)
+                valor_tmb = tmb.calc(genero)
+
+                print("\nNíveis de atividade física:")
+                print("1. Sedentário (pouco ou nenhum exercício)")
+                print("2. Levemente ativo (exercício leve 1 a 3 dias/semana)")
+                print("3. Moderadamente ativo (exercício moderado 3 a 5 dias/semana)")
+                print("4. Muito ativo (exercício pesado 6 a 7 dias/semana)")
+                print("5. Extremamente ativo (exercício muito intenso ou trabalho físico pesado)")
+
+                nivel = input("Escolha o nível de atividade (1-5): ")
+                fatores = {
+                    "1": 1.2,
+                    "2": 1.375,
+                    "3": 1.55,
+                    "4": 1.725,
+                    "5": 1.9
+                }
+
+                fator = fatores.get(nivel)
+                if fator:
+                    get = valor_tmb * fator
+                    print(f"Seu Gasto Energético Total (GET) é: {get:.2f} kcal")
+                else:
+                    print("Nível de atividade inválido.")
+            except Exception as e:
+                print("Erro ao calcular GET. Verifique os dados inseridos.")
+
 
         elif opcao == "4":
             exibir_historico_peso()
